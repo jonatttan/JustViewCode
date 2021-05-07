@@ -9,10 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let screen = ViewControllerScreen()
     override func loadView() {
-        let viewNova = UIView(frame: UIScreen.main.bounds)
-        viewNova.backgroundColor = .red
-        self.view = viewNova
+        self.view = screen
     }
     override func viewDidLoad() {
         super.viewDidLoad()

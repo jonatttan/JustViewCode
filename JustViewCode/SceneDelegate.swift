@@ -14,11 +14,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windScene = (scene as? UIWindowScene) else { return }
         
-        let windowThan = UIWindow(frame: windScene.coordinateSpace.bounds)
-        windowThan.windowScene = windScene
-        windowThan.rootViewController = ViewController()
-        windowThan.makeKeyAndVisible()
-        self.window = windowThan
+        let janela = UIWindow(frame: windScene.coordinateSpace.bounds)
+        janela.windowScene = windScene
+        janela.rootViewController = ViewController()
+        self.window = janela
+        self.window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
