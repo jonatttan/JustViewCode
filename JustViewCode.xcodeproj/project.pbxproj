@@ -16,6 +16,7 @@
 		89D63B5A2645BC1600286020 /* JustViewCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D63B592645BC1600286020 /* JustViewCodeTests.swift */; };
 		89D63B652645BC1600286020 /* JustViewCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D63B642645BC1600286020 /* JustViewCodeUITests.swift */; };
 		89D63B792645CFA300286020 /* ViewControllerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D63B782645CFA300286020 /* ViewControllerScreen.swift */; };
+		89D63B842648A75400286020 /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D63B832648A75400286020 /* CodeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		89D63B642645BC1600286020 /* JustViewCodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustViewCodeUITests.swift; sourceTree = "<group>"; };
 		89D63B662645BC1600286020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89D63B782645CFA300286020 /* ViewControllerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerScreen.swift; sourceTree = "<group>"; };
+		89D63B832648A75400286020 /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				89D63B412645BC1400286020 /* SceneDelegate.swift */,
 				89D63B432645BC1400286020 /* ViewController.swift */,
 				89D63B782645CFA300286020 /* ViewControllerScreen.swift */,
+				89D63B832648A75400286020 /* CodeView.swift */,
 				89D63B4B2645BC1600286020 /* Assets.xcassets */,
 				89D63B4D2645BC1600286020 /* LaunchScreen.storyboard */,
 				89D63B502645BC1600286020 /* Info.plist */,
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89D63B792645CFA300286020 /* ViewControllerScreen.swift in Sources */,
+				89D63B842648A75400286020 /* CodeView.swift in Sources */,
 				89D63B442645BC1400286020 /* ViewController.swift in Sources */,
 				89D63B4A2645BC1400286020 /* JustViewCode.xcdatamodeld in Sources */,
 				89D63B402645BC1400286020 /* AppDelegate.swift in Sources */,

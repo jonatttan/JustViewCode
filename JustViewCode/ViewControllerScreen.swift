@@ -8,25 +8,18 @@
 import UIKit
 
 final class ViewControllerScreen: UIView {
+    
+    lazy var button: UIButton = { // Clouse de criação. Só é possivel chamada de método dentro se for lazy
+        let view = UIButton(frame: .zero)
+        view.backgroundColor = .red
+        view.setTitle("fetch", for: .normal)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
     override init(frame: CGRect = .zero) {
         super.init(frame: frame)
-        
-        let button = UIButton(frame: .zero)
-        button.backgroundColor = .red
-        button.setTitle("Fetch", for: .normal)
-        
-        
-        // Adicionar View
-        addSubview(button)
-        // Configurar constraints
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 15).isActive = true
-        button.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -15).isActive = true
-        button.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -15).isActive = true
-        button.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        // Setup adicional
-        
-        backgroundColor = .darkGray
+        setupView()
     }
     
     required init?(coder: NSCoder) {
@@ -34,3 +27,21 @@ final class ViewControllerScreen: UIView {
     }
 }
 
+extension ViewControllerScreen: CodeView {
+    func buildViewHierarchy() {
+        // Adicionar View
+        addSubview(button)
+    }
+    func setupConstraints() {
+        // Configurar constraints
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 15).isActive = true
+        button.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -15).isActive = true
+        button.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -15)    .isActive = true
+        button.heightAnchor.constraint(equalToConstant: 50).isActive = true
+    }
+    func setupAdditionalConfiguration() {
+        // Setup adicional
+        backgroundColor = .darkGray
+    }
+}
